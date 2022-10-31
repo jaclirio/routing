@@ -1,0 +1,7 @@
+<p>home works!</p>
+<ul>
+  <li *ngFor="let product of products">
+    <a [routerLink]="['products', product]">{{product}}</a>
+  </li>
+</ul>
+<button (click)="buttonClicked()">Go to another</button>
